@@ -1,6 +1,6 @@
 .vscode
+images
 
-node_modules
 package-lock.json
 gulpfile.js
 sass
