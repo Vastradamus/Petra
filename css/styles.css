@@ -7890,7 +7890,7 @@ button.close {
 /*2.4.3 GALLERY */
 .gallery-our {
   text-align: center;
-  background: url("../images/Home-1/bg-gallery.jpg");
+  background: url("/img/icons/bg-gallery.jpg");
   padding-top: 50px;
   padding-bottom: 80px;
 }
