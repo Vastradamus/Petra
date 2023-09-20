@@ -8584,7 +8584,7 @@ button.close {
 
 /*2.4.7 TESTIMONIALS*/
 .testimonials {
-  background: url("/img/dvoriste/obe-kuce-lq-lg.jpg");
+  background: url("/img/divcibare/nova-staza-md-min.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -8593,7 +8593,7 @@ button.close {
   width: 100%;
 }
 .testimonials.testimonials-v2 {
-  background: url("/img/dvoriste/obe-kuce-lq-lg.jpg");
+  background: url("/img/divcibare/nova-staza-md-min.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -14413,6 +14413,9 @@ button.close {
 .footer-sky.footer-sky-v4 .footer-bottom .footer-bottom-l a:hover {
   color: #8E7037;
 }
+.footer-sky.footer-sky-v4 .footer-bottom p {
+  text-align: center;
+}
 .footer-sky.footer-sky-v4 .textbox {
   margin-bottom: 50px;
   margin-top: 45px;
@@ -15557,11 +15560,6 @@ a:hover, a:focus {
     height: 685px;
   }
   /* END/MAP */
-}
-@media (min-width: 1200px) {
-  .center {
-    margin-left: clam;
-  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   /* FOOTER */

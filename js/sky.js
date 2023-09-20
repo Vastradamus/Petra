@@ -1,3 +1,6 @@
+element.addEventListener('touchstart', function() {}, {passive: true});
+
+
 $(document).ready(function() {
     "use strict";
     /*masonry*/
