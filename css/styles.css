@@ -15558,6 +15558,11 @@ a:hover, a:focus {
   }
   /* END/MAP */
 }
+@media (min-width: 1200px) {
+  .center {
+    margin-left: clam;
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
   /* FOOTER */
   .footer-sky.footer-sky-v4 .footer-bottom {
