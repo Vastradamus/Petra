@@ -25,11 +25,11 @@
 </head>
 
 <body>
-       <!-- HEADER -->
-       <header class="header-sky">
+    <!-- HEADER -->
+    <header class="header-sky">
         <div class="container">
             <!--HEADER-TOP-->
-            <div class="header-top">
+            <div class="header-top hidden-xs">
                 <div class="header-top-left">
                     <span><i class="ion-ios-location-outline" style="font-size: 30px;"></i> Ljuti Krs, Divcibare</span>
                     <span><i class="fa fa-phone" aria-hidden="true" style="font-size: 30px;"></i> 1-548-854-8898</span>
@@ -37,11 +37,14 @@
 
                 <div class="header-top-right">
                     <ul>
-                        <li class="dropdown"><a href="#" title="Twitter" ><i style="font-size: 25px;" class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li class="dropdown"><a href="#" title="Facebook" style="font-size: 25px;"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                        <li class="dropdown"><a href="#" title="Instagram" style="font-size: 25px;"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </li>
+                        <li class="dropdown"><a href="#" title="Twitter"><i style="font-size: 25px;"
+                                    class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li class="dropdown"><a href="#" title="Facebook" style="font-size: 25px;"><i
+                                    class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                        <li class="dropdown"><a href="#" title="Instagram" style="font-size: 25px;"><i
+                                    class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                    </li>
                     </ul>
                 </div>
             </div>
@@ -52,13 +55,26 @@
             <nav class="navbar navbar-fixed-top">
                 <div class="container">
                     <div class="navbar-header ">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target=".navbar-collapse">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar "></span>
                             <span class="icon-bar "></span>
                             <span class="icon-bar "></span>
                         </button>
-                        <a class="navbar-brand" href="/index.html" title="Skyline"><img src="images/Home-2/logo-main.png" alt=""></a>
+                        <div class="header-logo-container">
+                            <a href="index.html" title="Petra">
+                                <picture class="header-logo">
+                                    <source media="(max-width: 450px)" srcset="img/icons/logo-main-sm-min.png"
+                                        sizes="100x40">
+                                    <source media="(min-width: 451px)" srcset="img/icons/logo-main-min.png"
+                                        sizes="200x80">
+                                    <img loading="eager" src="img/icons/logo-main-min.png" class="img-responsive"
+                                        alt="Petra logo" title="Petra logo">
+                                </picture>
+                            </a>
+                        </div>
+
                     </div>
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
@@ -68,10 +84,10 @@
                             <li class="">
                                 <a href="apartments.html" title="Room & Rate">Apartmani</a>
                             </li>
-                   
+
                             <li class="">
-                                <a href="gallery.html" title="Gallery" >Galerija</a>
-  
+                                <a href="gallery.html" title="Gallery">Galerija</a>
+
                             </li>
                             <li><a href="about.html" title="About">O nama</a></li>
                             <li><a href="contact.html" title="Contact">Kontakt</a></li>
@@ -101,7 +117,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
                         <div class="img">
-                            <a href="#"><img src="img/Zelena/apartman/dnevna-apartment-md.jpg" alt="Petra 1"></a>
+                            <a href="#"><img src="img/Zelena/apartman/dnevna-apartment-md-min.jpg" alt="Petra 1"></a>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
@@ -120,7 +136,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-lg-push-4 col-md-push-4">
                         <div class="img1">
-                            <a href="#"><img src="img/Zelena/Studio/dnevna-apartment-md.jpg" alt="Petra 1 Studio"></a>
+                            <a href="#"><img src="img/Zelena/Studio/dnevna-apartment-md-min.jpg" alt="Petra 1 Studio"></a>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-lg-pull-8 col-md-pull-8">
@@ -139,7 +155,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
                         <div class="img">
-                            <a href="#"><img src="img/Zuta/apartman/dnevna-apartment-md.jpg" alt="Petra 2"></a>
+                            <a href="#"><img src="img/Zuta/apartman/dnevna-apartment-md-min.jpg" alt="Petra 2"></a>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
@@ -158,7 +174,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-lg-push-4 col-md-push-4">
                         <div class="img1">
-                            <a href="#"><img src="img/Zuta/Studio/dnevna-apartment-md.jpg" alt="Petra 2 Studio"></a>
+                            <a href="#"><img src="img/Zuta/Studio/dnevna-apartment-md-min.jpg" alt="Petra 2 Studio"></a>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-lg-pull-8 col-md-pull-8">
@@ -175,29 +191,40 @@
     </section>
     <!-- END/BODY-ROOM-2-->
 
-<!--FOOTER-->
-<footer class="footer-sky">
-    
+   <!--FOOTER-->
+   <footer class="footer-sky">
+
     <div class="footer-top">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1">
-                    <div class="icon-email">
-                        <a href="#" title="Email"><img src="img/icons/phone-icon.png" alt="Email" class="img-responsive"></a>
+                <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                    <div class="icon-email hidden-xs">
+                        <a href="#" title="phone">
+                            <picture class="img-responsive">
+                                <source media="(max-width: 767px)" srcset="img/icons/phone-icon-sm-min.png"
+                                    sizes="32x32">
+                                <source media="(min-width: 768px)" srcset="img/icons/phone-icon-min.png"
+                                    sizes="64x64">
+                                <img loading="lazy" src="img/icons/phone-icon-min.png" class="img-responsive"
+                                    alt="igraliste za decu" title="igraliste za decu">
+                            </picture>
+                        </a>
                     </div>
+
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-7 col-lg-5">
-                    <h5 class="sky-h5">Za rezervacije, pozovite: <span> <a href="tel:0654242135">0654242135   </a></span></h5>
+                    <h5 class="sky-h5">Za rezervacije, pozovite: <span> <a href="tel:0654242135">0654242135
+                            </a></span></h5>
                     <!-- <div class="textbox">
-                        <div class="form-inline">
-                            <div class="form-group">
-                                <div class="input-group">
-                                    <input type="email" class="form-control" placeholder="Your email address" aria-label="Search for...">
-                                    <h5 class="form-control">test</h5>
-                                </div>
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Your email address" aria-label="Search for...">
+                                <h5 class="form-control">test</h5>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
+                </div> -->
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6 text-right">
                     <div class="footer-icon-l">
@@ -210,48 +237,50 @@
         </div>
         <!-- /container -->
     </div>
-    
-    
-        <!-- /footer-top -->
-        <div class="footer-mid">
-            <div class="container">
-                <div class="row padding-footer-mid">
-                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                        <div class="footer-logo text-center list-content">
-                            <a href="index.html" title="Skyline"><img src="images/Home-2/logo-main.png" alt="Image"></a>
-                        </div>
-                        <div class="footer-bottom">
-                            <div class="no-padding">
-                               <p>Copyright © 2023 by Marko Vasic</p> 
-                            </div>
+
+
+    <!-- /footer-top -->
+    <div class="footer-mid">
+        <div class="container">
+            <div class="row padding-footer-mid">
+                <div class="hidden-sm hidden-xs col-md-3 col-lg-3">
+                    <div class="footer-logo text-center list-content">
+                        <a href="index.html" title="Petra"><img loading="lazy" src="img/icons/logo-main-min.png"
+                                alt="Petra logo"></a>
+                    </div>
+                    <div class="footer-bottom">
+                        <div class="no-padding">
+                            <p>Copyright © 2023 by Marko Vasic</p>
                         </div>
                     </div>
-                    <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 col-lg-offset-1 col-md-offset-1  ">
-                        <div class="list-content">
-                            <nav class="">
-                                <ul class="">
-                                    <li class="">
-                                        <a href="index.html" title="Room & Rate">Naslovna</a>
-                                    </li>
-                                    <li class="">
-                                        <a href="apartments.html" title="Room & Rate">Apartmani</a>
-                                    </li>
-                           
-                                    <li class="">
-                                        <a href="gallery.html" title="Gallery" >Gallery</a>
-        
-                                    </li>
-                                    <li><a href="about.html" title="About">About</a></li>
-                                    <li><a href="contact.html" title="Contact">Contact</a></li>
-                                </ul>
-                            </nav>
-                        </div>
+                </div>
+                <div class="col-xs-3 col-sm-4 col-md-2 col-lg-2 col-lg-offset-1  ">
+                    <div class="list-content">
+                        <nav class="">
+                            <ul class="">
+                                <li class="">
+                                    <a href="index.html" title="Room & Rate">Naslovna</a>
+                                </li>
+                                <li class="">
+                                    <a href="apartments.html" title="Room & Rate">Apartmani</a>
+                                </li>
+
+                                <li class="">
+                                    <a href="gallery.html" title="Gallery">Gallery</a>
+
+                                </li>
+                                <li><a href="about.html" title="About">About</a></li>
+                                <li><a href="contact.html" title="Contact">Contact</a></li>
+                            </ul>
+                        </nav>
                     </div>
-                    <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 col-lg-offset-1 col-md-offset-1 ">
-                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6 text-right">
-                            <div class="footer-icon-l ">
-                                <div class="list-content">
-                                <ul >
+                </div>
+                <div
+                    class="col-xs-3 col-sm-3 col-md-2 col-lg-2 col-lg-offset-1 col-md-offset-1 col-xs-offset-2 col-sm-offset-0">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6 text-right">
+                        <div class="footer-icon-l ">
+                            <div class="list-content">
+                                <ul>
                                     <li>
                                         <a href="#" title="Twitter">
                                             <i class="fa fa-twitter" aria-hidden="true"></i> Twitter
@@ -269,24 +298,37 @@
                                     </li>
                                 </ul>
                             </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 col-lg-offset-1 col-md-offset-1">
-                        <div class="list-content ">
-                           <h5 class="h4">prijatelji sajta</h5>
-                        <div class="footer-logo text-center list-content">
-                            <a href="https://www.autovladashop.co.rs/" title="Skyline" target="_blank"><img src="images/Home-2/footer-avs-logo.png" alt="Image"></a>
-                        </div>
                         </div>
                     </div>
                 </div>
-            
+
+                <div class="col-xs-6 col-sm-2 col-md-3 col-lg-2 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+                    <div class="list-content center ">
+                        <h5 class="h4">prijatelji sajta</h5>
+                        <div class="footer-logo text-center list-content ">
+                            <a href="https://www.autovladashop.co.rs/" title="Auto vlada shop" target="_blank"><img
+                                    loading="lazy" src="img/icons/footer-avs-logo-min.png"
+                                    alt="Auto valda shop logo"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" hidden-md hidden-lg">
+                <div class="footer-logo text-center list-content hidden-xs">
+                    <a href="index.html" title="Petra"><img loading="lazy" src="img/icons/logo-main-min.png"
+                            alt="Petra logo"></a>
+                </div>
+                <div class="footer-bottom">
+                    <div class="no-padding center">
+                        <p>Copyright © 2023 by Marko Vasic</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </footer>
-    <!-- END / FOOTER-->
+    </div>
+
+</footer>
+<!-- END / FOOTER-->
 
     <!--SCOLL TOP-->
     <a href="#" title="sroll" class="scrollToTop"><i class="fa fa-angle-up"></i></a>

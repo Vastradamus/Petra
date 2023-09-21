@@ -9,19 +9,19 @@
     <!-- GOOGLE FONT -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900"
+        rel="stylesheet">
+    <link rel="preload" as="image" href="img/dvoriste/obe-kuce-md-index-min.jpg">
     <!-- CSS LIBRARY -->
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" type="text/css" href="css/gallery.css">
-    <link rel="stylesheet" type="text/css" href="css/vit-gallery.css">
+
     <link rel="shortcut icon" type="text/css" href="img/icons/favicon.png" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.css" />
     <!-- MAIN STYLE -->
     <link rel="stylesheet" href="css/styles.css">
-
+    <!-- <script type="text/javascript" src="js/sky.js"></script> -->
 </head>
 
 <body>
@@ -29,7 +29,7 @@
     <header class="header-sky">
         <div class="container">
             <!--HEADER-TOP-->
-            <div class="header-top">
+            <div class="header-top hidden-xs">
                 <div class="header-top-left">
                     <span><i class="ion-ios-location-outline" style="font-size: 30px;"></i> Ljuti Krs, Divcibare</span>
                     <span><i class="fa fa-phone" aria-hidden="true" style="font-size: 30px;"></i> 1-548-854-8898</span>
@@ -37,11 +37,14 @@
 
                 <div class="header-top-right">
                     <ul>
-                        <li class="dropdown"><a href="#" title="Twitter" ><i style="font-size: 25px;" class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li class="dropdown"><a href="#" title="Facebook" style="font-size: 25px;"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                        <li class="dropdown"><a href="#" title="Instagram" style="font-size: 25px;"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </li>
+                        <li class="dropdown"><a href="#" title="Twitter"><i style="font-size: 25px;"
+                                    class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li class="dropdown"><a href="#" title="Facebook" style="font-size: 25px;"><i
+                                    class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                        <li class="dropdown"><a href="#" title="Instagram" style="font-size: 25px;"><i
+                                    class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                    </li>
                     </ul>
                 </div>
             </div>
@@ -52,13 +55,26 @@
             <nav class="navbar navbar-fixed-top">
                 <div class="container">
                     <div class="navbar-header ">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target=".navbar-collapse">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar "></span>
                             <span class="icon-bar "></span>
                             <span class="icon-bar "></span>
                         </button>
-                        <a class="navbar-brand" href="/index.html" title="Skyline"><img src="images/Home-2/logo-main.png" alt=""></a>
+                        <div class="header-logo-container">
+                            <a href="index.html" title="Petra">
+                                <picture class="header-logo">
+                                    <source media="(max-width: 450px)" srcset="img/icons/logo-main-sm-min.png"
+                                        sizes="100x40">
+                                    <source media="(min-width: 451px)" srcset="img/icons/logo-main-min.png"
+                                        sizes="200x80">
+                                    <img loading="eager" src="img/icons/logo-main-min.png" class="img-responsive"
+                                        alt="Petra logo" title="Petra logo">
+                                </picture>
+                            </a>
+                        </div>
+
                     </div>
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
@@ -68,10 +84,10 @@
                             <li class="">
                                 <a href="apartments.html" title="Room & Rate">Apartmani</a>
                             </li>
-                   
+
                             <li class="">
-                                <a href="gallery.html" title="Gallery" >Galerija</a>
-  
+                                <a href="gallery.html" title="Gallery">Galerija</a>
+
                             </li>
                             <li><a href="about.html" title="About">O nama</a></li>
                             <li><a href="contact.html" title="Contact">Kontakt</a></li>
@@ -86,22 +102,30 @@
 
     <!-- SLIDER -->
     <section class="section-slider height-v">
-        <div id="index12" class="owl-carousel  owl-theme background ">
+        <div id="index12" class="owl-carousel  owl-theme background hero-container">
             <div class="item">
-                <img alt="žuta i zelena kuća" src="img/dvoriste/index-header-lg.jpg" class="img-responsive">
-             
+                <picture class="">
+                    <source media="(max-width: 767px)" srcset="img/dvoriste/obe-kuce-md-index-min.jpg" sizes="570x360">
+                    <source media="(min-width: 768px)" srcset="img/dvoriste/index-header-lg-min.jpg" sizes="1920x1000">
+                    <img loading="eager" src="img/dvoriste/index-header-lg-min.jpg" class="img-responsive"
+                        alt="žuta i zelena kuća" title="žuta i zelena kuća"  height="100vh">
+                </picture>
                 <div class="carousel-caption">
                     <h1 class="v2">Uživajte na Divčibarima</h1>
                     <p class="p-v2"><span class="line-t"></span>Apartmani Petra <span class="line-b"></span></p>
                 </div>
             </div>
-              <div class="item">
-                <img src="img/divcibare/nav-main.jpg" alt="nova ski staza na Divčibarima" class="img-responsive">
+            <!-- <div class="item">
+                    <picture class="">
+                        <source media="(max-width: 767px)"  srcset="img/dvoriste/nav-main-md-min.jpg" sizes="570x360">
+                        <source media="(min-width: 768px)" srcset="img/divcibare/nav-main.webp" sizes="1920x1000">
+                        <img loading="eager" src="img/divcibare/nav-main.webp" class="img-responsive" alt="ski staza" title="ski staza">
+                    </picture>
                 <div class="carousel-caption">
                     <h1 class="v2">Uživajte na Divcibariba</h1>
                     <p class="p-v2"><span class="line-t"></span>Apartmani Petra <span class="line-b"></span></p>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="check-avail">
             <div class="container">
@@ -109,14 +133,14 @@
                     <label>Datum dolaska </label>
                     <div id="datepicker" class="input-group date" data-date-format="dd-mm-yyyy">
                         <input class="form-control" type="text">
-                        <span class="input-group-addon"><img src="img/icons/date-icon.png" alt=""></span>
+                        <span class="input-group-addon"><img loading="lazy" src="img/icons/date-icon.png" alt=""></span>
                     </div>
                 </div>
                 <div class="departure date-title ">
                     <label>datum odlaska </label>
                     <div id="datepickeri" class="input-group date" data-date-format="dd-mm-yyyy">
                         <input class="form-control" type="text">
-                        <span class="input-group-addon"><img src="img/icons/date-icon.png" alt=""></span>
+                        <span class="input-group-addon"><img loading="lazy" src="img/icons/date-icon.png" alt=""></span>
                     </div>
                 </div>
                 <!-- <div class="adults date-title ">
@@ -153,14 +177,15 @@
                 </div> -->
                 <div class="departure date-title ">
                     <label>Vaš telefon </label>
-                    <div id="" class="input-group date" >
+                    <div id="" class="input-group date">
                         <input class="form-control" type="tel">
-                        <span class="input-group-addon"><img src="img/icons/phone-icon.png" alt=""></span>
+                        <span class="input-group-addon"><img loading="lazy" src="img/icons/phone-icon.png"
+                                alt=""></span>
                     </div>
                 </div>
                 <div class="find_btn date-title">
                     <div class="text-find">
-                       proverite
+                        proverite
                         <br>dostupnost
                     </div>
 
@@ -169,20 +194,21 @@
         </div>
     </section>
     <!-- END / SLIDER -->
-<!-- OUR-ROOMS-->
-<section class="rooms rooms-v2 rooms-v4">
-    <div class="container">
-        <h2 class="title-room">Naši Apartmani</h2>
-        <div class="outline"></div>
-        <p class="rooms-p">Bilo da tražite avanturu ili tražite mirno utočište, naši planinski apartmani nude savršenu atmosferu za nezaboravna iskustva</p>
-        <div class="wrap-rooms">
-            <div class="row">
-                <div >
+    <!-- OUR-ROOMS-->
+    <section class="rooms rooms-v2 rooms-v4">
+        <div class="container">
+            <h2 class="title-room">Naši Apartmani</h2>
+            <div class="outline"></div>
+            <p class="rooms-p">Bilo da tražite avanturu ili tražite mirno utočište, naši planinski apartmani nude
+                savršenu atmosferu za nezaboravna iskustva</p>
+            <div class="wrap-rooms">
+                <div class="row">
+                    <div class="center">
                         <!-- Zelena Kuca -->
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 ">
+                        <!-- <div class="col-lg-6 col-md-4 col-sm-6 col-xs-6 ">
                             <div class="wrap-box wrap-box-v4">
                                 <div class="box-img">
-                                    <img src="img/Zelena/zelena-kuca-1-md -sq.jpg" class="img-responsive" alt="Zelena kuća" title="Zelena kuća">
+                                    <img loading="lazy" src="img/Zelena/zelena-kuca-1-md -sq.jpg" class="img-responsive" alt="Zelena kuća" title="Zelena kuća">
                                 </div>
                                 <div class="rooms-content">
                                     <h4 class="sky-h4">Zelena Kuća</h4>
@@ -197,40 +223,52 @@
                                         <p>Kuća sa dva apartmana, studio i apartman 1, pruža udobnost i privatnost za opuštanje u srcu planinskog ambijenta, idealna za porodice, parove i prijatelje.</p>
                                         <div class="bottom-room">
                                             <ul>
-                                                <li><img src="images/Home-4/v2-icon.png" class="img-responsive" alt="Image">9 osoba</li>
-                                                <li><img src="images/Home-4/v2-icon-1.png" class="img-responsive" alt="Image">60m2</li>
-                                                <li><img src="images/Home-4/v2-icon-2.png" class="img-responsive" alt="Slika">Veliki balkon</li>
-                                                <li><img src="images/Home-4/v2-icon-3.png" class="img-responsive" alt="Image">Kingsize / Twin</li>
+                                                <li><img loading="lazy" src="img/icons/v2-icon.png" class="img-responsive" alt="Image">9 osoba</li>
+                                                <li><img loading="lazy" src="img/icons/v2-icon-1.png" class="img-responsive" alt="Image">60m2</li>
+                                                <li><img loading="lazy" src="img/icons/v2-icon-2.png" class="img-responsive" alt="Slika">Veliki balkon</li>
+                                                <li><img loading="lazy" src="img/icons/v2-icon-3.png" class="img-responsive" alt="Image">Kingsize / Twin</li>
                                             </ul>
                                         </div>
                                         <div class="btn btn-room">pogledaj vise</div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                         <!-- Apartman 1 zelena -->
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 ">
+                        </div> -->
+                        <!-- Apartman 1 zelena -->
+                        <div class="col-lg-5  col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-6 col-xs-6 ">
                             <div class="wrap-box wrap-box-v4">
-                                <div class="box-img">
-                                    <img src="img/Zelena/apartman/dnevna-small.jpg" class="img-responsive" alt="Apartman Petra 1" title="Apartman Petra 1">
-                                </div>
+                                <picture class="box-img">
+                                    <source media="(max-width: 767px)" srcset="img/Zelena/apartman/dnevna-small-min.jpg"
+                                        sizes="370x370">
+                                    <source media="(min-width: 768px)" srcset="img/Zelena/apartman/dnevna-md-min.jpg">
+                                    <img src="img/Zelena/apartman/dnevna-md-min.jpg" class="img-responsive"
+                                        alt="Apartman Petra 2" title="Apartman Petra 2">
+                                </picture>
+
                                 <div class="rooms-content">
                                     <h4 class="sky-h4">PETRA 1</h4>
-                                   <span> <i class="ion-ios-people" style="font-size: 20px; margin-right: 3px; "></i> 8 osoba</span>
+                                    <span> <i class="ion-ios-people" style="font-size: 20px; margin-right: 3px; "></i> 8
+                                        osoba</span>
                                 </div>
                                 <div class="content">
                                     <div class="wrap-content">
                                         <div class="rooms-content1">
                                             <h4 class="sky-h4">PETRA 1 </h4>
-                                           
+
                                         </div>
-                                        <p>PETRA 1 je udoban, prostran i dobro osvetljen, kompletno opremljen apartman za odmor i boravak do 5 osoba. Nalazi se u prizemlju zelene kuće sa pogledom na veliko dvorište sa fontanom.</p>
+                                        <p>PETRA 1 je udoban, prostran i dobro osvetljen, kompletno opremljen apartman
+                                            za odmor i boravak do 5 osoba. Nalazi se u prizemlju zelene kuće sa pogledom
+                                            na veliko dvorište sa fontanom.</p>
                                         <div class="bottom-room">
                                             <ul>
-                                                <li><img src="images/Home-4/v2-icon.png" class="img-responsive" alt="Image">5 osoba</li>
-                                                <li><img src="images/Home-4/v2-icon-1.png" class="img-responsive" alt="Image">35m2</li>
-                                                <li><img src="images/Home-4/v2-icon-2.png" class="img-responsive" alt="Slika">Veliki balkon</li>
-                                                <li><img src="images/Home-4/v2-icon-3.png" class="img-responsive" alt="Image">Kingsize / Twin</li>
+                                                <li><img loading="lazy" src="img/icons/v2-icon.png"
+                                                        class="img-responsive" alt="Image">5 osoba</li>
+                                                <li><img loading="lazy" src="img/icons/v2-icon-1.png"
+                                                        class="img-responsive" alt="Image">35m2</li>
+                                                <li><img loading="lazy" src="img/icons/v2-icon-2.png"
+                                                        class="img-responsive" alt="Slika">Veliki balkon</li>
+                                                <li><img loading="lazy" src="img/icons/v2-icon-3.png"
+                                                        class="img-responsive" alt="Image">Kingsize / Twin</li>
                                             </ul>
                                         </div>
                                         <div class="btn btn-room">pogledaj vise</div>
@@ -239,28 +277,40 @@
                             </div>
                         </div>
                         <!-- Studio 1 zelena -->
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 ">
+                        <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6 ">
                             <div class="wrap-box wrap-box-v4">
-                                <div class="box-img">
-                                    <img src="img/Zelena/Studio/dnevna-small.jpg" class="img-responsive" alt="Petra 1 studio" title="Petra 1 studio">
-                                </div>
+                                <picture class="box-img">
+                                    <source media="(max-width: 767px)" srcset="img/Zelena/Studio/dnevna-small-min.jpg"
+                                        sizes="370x370">
+                                    <source media="(min-width: 768px)" srcset="img/Zelena/Studio/dnevna-md-min.jpg">
+                                    <img src="img/Zelena/Studio/dnevna-md-min.jpg" class="img-responsive"
+                                        alt="Apartman Petra 1" title="Apartman Petra 1">
+                                </picture>
+
                                 <div class="rooms-content">
                                     <h4 class="sky-h4">Petra 1 studio</h4>
-                                   <span> <i class="ion-ios-people" style="font-size: 20px; margin-right: 3px; "></i> 8 osoba</span>
+                                    <span> <i class="ion-ios-people" style="font-size: 20px; margin-right: 3px; "></i> 3
+                                        osoba</span>
                                 </div>
                                 <div class="content">
                                     <div class="wrap-content">
                                         <div class="rooms-content1">
                                             <h4 class="sky-h4">Petra 1 studio</h4>
-                                           
+
                                         </div>
-                                        <p>Studio Divčibare PETRA 1 je udoban, prostran i dobro osvetljen, kompletno opremljen studio za odmor i boravak do 3 osobe. Nalazi se na spratu zelene kuće sa pogledom na veliko dvorište sa fontanom.</p>
+                                        <p>Studio Divčibare PETRA 1 je udoban, prostran i dobro osvetljen, kompletno
+                                            opremljen studio za odmor i boravak do 3 osobe. Nalazi se na spratu zelene
+                                            kuće sa pogledom na veliko dvorište sa fontanom.</p>
                                         <div class="bottom-room">
                                             <ul>
-                                                <li><img src="images/Home-4/v2-icon.png" class="img-responsive" alt="Image">4 osoba</li>
-                                                <li><img src="images/Home-4/v2-icon-1.png" class="img-responsive" alt="Image">35m2</li>
-                                                <li><img src="images/Home-4/v2-icon-2.png" class="img-responsive" alt="Slika">Veliki balkon</li>
-                                                <li><img src="images/Home-4/v2-icon-3.png" class="img-responsive" alt="Image">Kingsize / Twin</li>
+                                                <li><img loading="lazy" src="img/icons/v2-icon.png"
+                                                        class="img-responsive" alt="Image">4 osoba</li>
+                                                <li><img loading="lazy" src="img/icons/v2-icon-1.png"
+                                                        class="img-responsive" alt="Image">35m2</li>
+                                                <li><img loading="lazy" src="img/icons/v2-icon-2.png"
+                                                        class="img-responsive" alt="Slika">Veliki balkon</li>
+                                                <li><img loading="lazy" src="img/icons/v2-icon-3.png"
+                                                        class="img-responsive" alt="Image">Kingsize / Twin</li>
                                             </ul>
                                         </div>
                                         <div class="btn btn-room">pogledaj vise</div>
@@ -269,10 +319,10 @@
                             </div>
                         </div>
                         <!-- Zuta Kuca -->
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 ">
+                        <!-- <div class="col-lg-6 col-md-4 col-sm-6 col-xs-6 ">
                             <div class="wrap-box wrap-box-v4">
                                 <div class="box-img">
-                                    <img src="img/Zuta/Zuta-kuca-small.jpg" class="img-responsive" alt="Žuta kuća" title="Žuta kuća">
+                                    <img loading="lazy" src="img/Zuta/Zuta-kuca-small.jpg" class="img-responsive" alt="Žuta kuća" title="Žuta kuća">
                                 </div>
                                 <div class="rooms-content">
                                     <h4 class="sky-h4">Žuta Kuća</h4>
@@ -287,40 +337,52 @@
                                         <p>PETRA apartmani Divčibare u žutoj kući nude Apartman PETRA-2 i Studio PETRA-2. Oba smeštaja su prostrana, dobro osvetljena, a nameštaj kvalitetan i kompletan</p>
                                         <div class="bottom-room">
                                             <ul>
-                                                <li><img src="images/Home-4/v2-icon.png" class="img-responsive" alt="Image">9 osoba</li>
-                                                <li><img src="images/Home-4/v2-icon-1.png" class="img-responsive" alt="Image">60m2</li>
-                                                <li><img src="images/Home-4/v2-icon-2.png" class="img-responsive" alt="Slika">Veliki balkon</li>
-                                                <li><img src="images/Home-4/v2-icon-3.png" class="img-responsive" alt="Image">Kingsize / Twin</li>
+                                                <li><img loading="lazy" src="img/icons/v2-icon.png" class="img-responsive" alt="Image">9 osoba</li>
+                                                <li><img loading="lazy" src="img/icons/v2-icon-1.png" class="img-responsive" alt="Image">60m2</li>
+                                                <li><img loading="lazy" src="img/icons/v2-icon-2.png" class="img-responsive" alt="Slika">Veliki balkon</li>
+                                                <li><img loading="lazy" src="img/icons/v2-icon-3.png" class="img-responsive" alt="Image">Kingsize / Twin</li>
                                             </ul>
                                         </div>
                                         <div class="btn btn-room">pogledaj vise</div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- Zuta kuca apartman 2 -->
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 ">
+                        <div class="col-lg-5  col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-6 col-xs-6 ">
                             <div class="wrap-box wrap-box-v4">
-                                <div class="box-img">
-                                    <img src="img/Zuta/apartman/dnevna-small.jpg" class="img-responsive" alt="Apartman Petra 2" title="Apartman Petra 2">
-                                </div>
+                                <picture class="box-img">
+                                    <source media="(max-width: 767px)" srcset="img/Zuta/apartman/dnevna-small-min.jpg"
+                                        sizes="370x370">
+                                    <source media="(min-width: 768px)" srcset="img/Zuta/apartman/dnevna-md-min.jpg">
+                                    <img src="img/Zuta/apartman/dnevna-md-min.jpg" class="img-responsive"
+                                        alt="Apartman Petra 1" title="Apartman Petra 2">
+                                </picture>
+
                                 <div class="rooms-content">
                                     <h4 class="sky-h4">Petra 2</h4>
-                                   <span> <i class="ion-ios-people" style="font-size: 20px; margin-right: 3px; "></i> 8 osoba</span>
+                                    <span> <i class="ion-ios-people" style="font-size: 20px; margin-right: 3px; "></i> 7
+                                        osoba</span>
                                 </div>
                                 <div class="content">
                                     <div class="wrap-content">
                                         <div class="rooms-content1">
                                             <h4 class="sky-h4">Petra 2</h4>
-                                           
+
                                         </div>
-                                        <p>Kuća sa dva apartmana, studio i apartman 2, pruža udobnost i privatnost za opuštanje u srcu planinskog ambijenta, idealna za porodice, parove i prijatelje.</p>
+                                        <p>Kuća sa dva apartmana, studio i apartman 2, pruža udobnost i privatnost za
+                                            opuštanje u srcu planinskog ambijenta, idealna za porodice, parove i
+                                            prijatelje.</p>
                                         <div class="bottom-room">
                                             <ul>
-                                                <li><img src="images/Home-4/v2-icon.png" class="img-responsive" alt="Image">9 osoba</li>
-                                                <li><img src="images/Home-4/v2-icon-1.png" class="img-responsive" alt="Image">60m2</li>
-                                                <li><img src="images/Home-4/v2-icon-2.png" class="img-responsive" alt="Slika">Veliki balkon</li>
-                                                <li><img src="images/Home-4/v2-icon-3.png" class="img-responsive" alt="Image">Kingsize / Twin</li>
+                                                <li><img loading="lazy" src="img/icons/v2-icon.png"
+                                                        class="img-responsive" alt="Image">9 osoba</li>
+                                                <li><img loading="lazy" src="img/icons/v2-icon-1.png"
+                                                        class="img-responsive" alt="Image">60m2</li>
+                                                <li><img loading="lazy" src="img/icons/v2-icon-2.png"
+                                                        class="img-responsive" alt="Slika">Veliki balkon</li>
+                                                <li><img loading="lazy" src="img/icons/v2-icon-3.png"
+                                                        class="img-responsive" alt="Image">Kingsize / Twin</li>
                                             </ul>
                                         </div>
                                         <div class="btn btn-room">pogledaj vise</div>
@@ -329,28 +391,40 @@
                             </div>
                         </div>
                         <!-- Studio 2 zuta -->
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 ">
+                        <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6 ">
                             <div class="wrap-box wrap-box-v4">
-                                <div class="box-img">
-                                    <img src="img/Zuta/Studio/dnevna-small.jpg" class="img-responsive" alt="Petra 2 studio" title="Petra 2 studio">
-                                </div>
+                                <picture class="box-img">
+                                    <source media="(max-width: 767px)" srcset="img/Zuta/Studio/dnevna-small-min.jpg"
+                                        sizes="370x370">
+                                    <source media="(min-width: 768px)" srcset="img/Zuta/Studio/dnevna-md-min.jpg">
+                                    <img src="img/Zuta/Studio/dnevna-md-min.jpg" class="img-responsive"
+                                        alt="Petra 2 studio" title="Petra 2 studio">
+                                </picture>
+
                                 <div class="rooms-content">
                                     <h4 class="sky-h4">Petra 2 studio</h4>
-                                   <span> <i class="ion-ios-people" style="font-size: 20px; margin-right: 3px; "></i> 8 osoba</span>
+                                    <span> <i class="ion-ios-people" style="font-size: 20px; margin-right: 3px; "></i> 5
+                                        osoba</span>
                                 </div>
                                 <div class="content">
                                     <div class="wrap-content">
                                         <div class="rooms-content1">
                                             <h4 class="sky-h4">Petra 2 studio</h4>
-                                           
+
                                         </div>
-                                        <p>Studio Divčibare PETRA 2 je udoban, prostran i dobro osvetljen, kompletno opremljen studio za odmor i boravak do 3 osobe. Nalazi se na spratu žute kuće sa pogledom na veliko dvorište sa fontanom.</p>
+                                        <p>Studio Divčibare PETRA 2 je udoban, prostran i dobro osvetljen, kompletno
+                                            opremljen studio za odmor i boravak do 3 osobe. Nalazi se na spratu žute
+                                            kuće sa pogledom na veliko dvorište sa fontanom.</p>
                                         <div class="bottom-room">
                                             <ul>
-                                                <li><img src="images/Home-4/v2-icon.png" class="img-responsive" alt="Image">9 osoba</li>
-                                                <li><img src="images/Home-4/v2-icon-1.png" class="img-responsive" alt="Image">60m2</li>
-                                                <li><img src="images/Home-4/v2-icon-2.png" class="img-responsive" alt="Slika">Veliki balkon</li>
-                                                <li><img src="images/Home-4/v2-icon-3.png" class="img-responsive" alt="Image">Kingsize / Twin</li>
+                                                <li><img loading="lazy" src="img/icons/v2-icon.png"
+                                                        class="img-responsive" alt="Image">9 osoba</li>
+                                                <li><img loading="lazy" src="img/icons/v2-icon-1.png"
+                                                        class="img-responsive" alt="Image">60m2</li>
+                                                <li><img loading="lazy" src="img/icons/v2-icon-2.png"
+                                                        class="img-responsive" alt="Slika">Veliki balkon</li>
+                                                <li><img loading="lazy" src="img/icons/v2-icon-3.png"
+                                                        class="img-responsive" alt="Image">Kingsize / Twin</li>
                                             </ul>
                                         </div>
                                         <div class="btn btn-room">pogledaj vise</div>
@@ -359,15 +433,15 @@
                             </div>
                         </div>
                     </div>
-                   
-                 
+
+
                 </div>
             </div>
         </div>
-    </div>
-    <!-- /container -->
-</section>
-<!-- END / ROOMS -->
+        </div>
+        <!-- /container -->
+    </section>
+    <!-- END / ROOMS -->
 
     <!-- ABOUT-US-->
     <section class="about about-v2">
@@ -377,15 +451,33 @@
                     <div class="about-centent">
                         <h2 class="about-title text-center">O nama</h2>
                         <div class="line-v2"></div>
-                        <p class="about-p">Naša priča počinje u najlepšem i najmirnijem delu Divčibara. Apartmani "Petra" su vaša oaza udobnosti, smiraja i iskonske prirode. Osećajte se kao kod kuće u našim luksuzno opremljenim smeštajnim jedinicama, bilo da birate između naših prostranih apartmana ili udobnih studija.</p>
-                        <p class="about-p1">Smešteni u dve kuće - zelenoj i žutoj - naši apartmani i studiji su pažljivo osmišljeni kako bi vaš boravak bio nezaboravan. Uživajte u blizini četiri prirodna rezervata - Crna reka, Zabalac, Čalački potok i Vražji vir - i istražite sve čari ovog predivnog okruženja.</p>
+                        <p class="about-p">Naša priča počinje u najlepšem i najmirnijem delu Divčibara. Apartmani
+                            "Petra" su vaša oaza udobnosti, smiraja i iskonske prirode. Osećajte se kao kod kuće u našim
+                            luksuzno opremljenim smeštajnim jedinicama, bilo da birate između naših prostranih apartmana
+                            ili udobnih studija.</p>
+                        <p class="about-p1">Smešteni u dve kuće - zelenoj i žutoj - naši apartmani i studiji su pažljivo
+                            osmišljeni kako bi vaš boravak bio nezaboravan. Uživajte u blizini četiri prirodna rezervata
+                            - Crna reka, Zabalac, Čalački potok i Vražji vir - i istražite sve čari ovog predivnog
+                            okruženja.</p>
                     </div>
                     <div class="about-img">
                         <div class="img-1">
-                            <img src="img/dvoriste/obe-kuce-md-index.jpg" class="img-responsive" alt="žuta i zelena kuća ">
-                            <div class="img-2">
-                                <img src="img/dvoriste/fontana-md-index.jpg" class="img-responsive" alt="fontana u dvorištu">
-                            </div>
+                            <picture class="">
+                                <source media="(max-width: 767px)" srcset="img/dvoriste/obe-kuce-sm.jpg"
+                                    sizes="300x225">
+                                <source media="(min-width: 768px)" srcset="img/dvoriste/obe-kuce-md-index-min.jpg"
+                                    sizes="570x375">
+                                <img loading="lazy" src="img/dvoriste/obe-kuce-md-index-min.jpg" class="img-responsive"
+                                    alt="zelena i zuta kuca" title="zelena i zuta kuca">
+                            </picture>
+                            <picture class="img-2">
+                                <source media="(max-width: 767px)" srcset="img/dvoriste/fontana-sm-min.jpg"
+                                    sizes="300x225">
+                                <source media="(min-width: 768px)" srcset="img/dvoriste/fontana-md-index.jpg"
+                                    sizes="585x430">
+                                <img loading="lazy" src="img/dvoriste/fontana-md-index.jpg" class="img-responsive"
+                                    alt="fontana u dvoristu" title="fontana u dvoristu">
+                            </picture>
                         </div>
                     </div>
 
@@ -398,14 +490,15 @@
     <!-- END/ ABOUT-US-->
 
     <!-- BEST -->
-    <section class="best">
+    <section class="best hidden-xs">
         <div class="container">
             <div class="row">
-             
+
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
                     <div class="wrap-best">
                         <div class="icon-best">
-                            <img src="img/icons/about-icon-mountain.png" class="img-responsive" alt="planinski pogled">
+                            <img loading="lazy" src="img/icons/about-icon-mountain-min.png" class="img-responsive"
+                                alt="planinski pogled">
                         </div>
                         <h6 class="sky-h6">Planinski pogled</h6>
                     </div>
@@ -413,7 +506,8 @@
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
                     <div class="wrap-best">
                         <div class="icon-best">
-                            <img src="img/icons/about-icon-playground.png" class="img-responsive" alt="Igralište za decu">
+                            <img loading="lazy" src="img/icons/about-icon-playground-min.png" class="img-responsive"
+                                alt="Igralište za decu">
                         </div>
                         <h6 class="sky-h6">Igraliste za decu</h6>
                     </div>
@@ -421,7 +515,8 @@
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
                     <div class="wrap-best">
                         <div class="icon-best">
-                            <img src="img/icons/about-icon-wifi.png" class="img-responsive" alt="wifi">
+                            <img loading="lazy" src="img/icons/about-icon-wifi-min.png" class="img-responsive"
+                                alt="wifi">
                         </div>
                         <h6 class="sky-h6">Wifi</h6>
                     </div>
@@ -429,39 +524,44 @@
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
                     <div class="wrap-best">
                         <div class="icon-best">
-                            <img src="img/icons/about-icon-parking.png" class="img-responsive" alt="parking">
+                            <img loading="lazy" src="img/icons/about-icon-parking-min.png" class="img-responsive"
+                                alt="parking">
                         </div>
                         <h6 class="sky-h6">Parking</h6>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 hidden-sm hiddem-x">
                     <div class="wrap-best">
                         <div class="icon-best">
-                            <img src="img/icons/about-icon-pergola.png" class="img-responsive" alt="Letnjikovac">
+                            <img loading="lazy" src="img/icons/about-icon-pergola-min.png" class="img-responsive"
+                                alt="Letnjikovac">
                         </div>
                         <h6 class="sky-h6">Letnjikovac</h6>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 hidden-sm hiddem-x">
                     <div class="wrap-best">
                         <div class="icon-best">
-                            <img src="img/icons/about-icon-kitchen-set.png" class="img-responsive" alt="Opremljena kuhinja">
+                            <img loading="lazy" src="img/icons/about-icon-kitchen-set-min.png" class="img-responsive"
+                                alt="Opremljena kuhinja">
                         </div>
                         <h6 class="sky-h6">Opremljena kuhinja</h6>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 hidden-sm hiddem-x">
                     <div class="wrap-best">
                         <div class="icon-best">
-                            <img src="img/icons/about-icon-mountains.png" class="img-responsive" alt="Priroda">
+                            <img loading="lazy" src="img/icons/about-icon-mountains-min.png" class="img-responsive"
+                                alt="Priroda">
                         </div>
                         <h6 class="sky-h6">Netaktuna priroda</h6>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 hidden-sm hiddem-x">
                     <div class="wrap-best">
                         <div class="icon-best">
-                            <img src="img/icons/about-icon-television.png" class="img-responsive" alt="televizor">
+                            <img loading="lazy" src="img/icons/about-icon-television-min.png" class="img-responsive"
+                                alt="televizor">
                         </div>
                         <h6 class="sky-h6">Tv</h6>
                     </div>
@@ -479,52 +579,82 @@
                     <div id="testimonials" class="owl-carousel owl-theme">
                         <div class="item ">
                             <div class="row">
-                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                                    <div class="testimonials-img">
-                                        <img src="img/icons/testimonoals-icon-1.png" alt="osoba 1">
-                                    </div>
-                                </div>
+                                <!-- <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                    <picture class="testimonials-img">
+                                        <source media="(max-width: 767px)" srcset="img/icons/testimonoals-icon-1-min.png"
+                                            sizes="300x225">
+                                        <source media="(min-width: 768px)" srcset="img/icons/testimonoals-icon-1-min.png"
+                                            sizes="900x675">
+                                        <img loading="lazy" src="img/icons/testimonoals-icon-1.png" class="img-responsive"
+                                            alt="osoba 1" title="osoba 1">
+                                    </picture>
+                              
+                                </div> -->
                                 <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
                                     <div class="content-testimonials">
                                         <div class="title-tes">
-                                            <h5><span class="sky-h5">Jabucilo</span><span</h5>
+                                            <h5><span class="sky-h5">Desa Djordjevic Milutinovic</span>
+                                            </h5>
                                         </div>
-                                        <p class="testimonials-pp">This is the only place to stay in Catalina! I have stayed in the cheaper hotels and they were fine, but this is just the icing on the cake! After spending the day bike riding and hiking to come back and enjoy a glass of wine while looking out your ocean view window and then to top it all off...</p>
+                                        <p class="testimonials-pp">Диван смештај на одличном месту. Домаћица Драгана је
+                                            веома љубазна и потпуно кооперативна. Удобно ушушкан са добрим вибрацијама
+                                            свуда. Прихватамо кућне љубимце 👍 Били смо у жутој кући у приземљу.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="item ">
                             <div class="row">
-                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                                    <div class="testimonials-img">
-                                        <img src="images/Home-2/Testimonials.png" alt="">
-                                    </div>
-                                </div>
+                                <!-- <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                    <picture class="testimonials-img">
+                                        <source media="(max-width: 767px)" srcset="img/icons/testimonoals-icon-1-min.png"
+                                            sizes="300x225">
+                                        <source media="(min-width: 768px)" srcset="img/icons/testimonoals-icon-1-min.png"
+                                            sizes="900x675">
+                                        <img loading="lazy" src="img/icons/testimonoals-icon-1.png" class="img-responsive"
+                                            alt="osoba 1" title="osoba 1">
+                                    </picture>
+                              
+                                </div> -->
                                 <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
                                     <div class="content-testimonials">
                                         <div class="title-tes">
-                                            <h5><span class="sky-h5">Jabucilo</span><span</h5>
+                                            <h5><span class="sky-h5">Oljka Oljka</span>
+                                            </h5>
                                         </div>
-                                        <p class="testimonials-pp">This is the only place to stay in Catalina! I have stayed in the cheaper hotels and they were fine, but this is just the icing on the cake! After spending the day bike riding and hiking to come back and enjoy a glass of wine while looking out your ocean view window and then to top it all off...</p>
+                                        <p class="testimonials-pp">Предивни апартмани у мирном делу Дивчибара са
+                                            прелепом природом идеални за одмор и релаксацију.Идем редовно сваке године
+                                            са породицом и својим љубимцем, а власници апартмана су веома љубазни људи,
+                                            па ако желите одмор, али одмор без буке и гужве, ово место је прави избор. .
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="item ">
-                            <div class="row">
-                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                                    <div class="testimonials-img">
-                                        <img src="images/Home-2/Testimonials.png" alt="">
+                        <div class="row">
+                            <!-- <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                <picture class="testimonials-img">
+                                    <source media="(max-width: 767px)" srcset="img/icons/testimonoals-icon-1-min.png"
+                                        sizes="300x225">
+                                    <source media="(min-width: 768px)" srcset="img/icons/testimonoals-icon-1-min.png"
+                                        sizes="900x675">
+                                    <img loading="lazy" src="img/icons/testimonoals-icon-1.png" class="img-responsive"
+                                        alt="osoba 1" title="osoba 1">
+                                </picture>
+                          
+                            </div> -->
+                            <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                                <div class="content-testimonials">
+                                    <div class="title-tes">
+                                        <h5><span class="sky-h5">Marina Radovic</span>
+                                        </h5>
                                     </div>
-                                </div>
-                                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-                                    <div class="content-testimonials">
-                                        <div class="title-tes">
-                                            <h5><span class="sky-h5">Jabucilo</span><span</h5>
-                                        </div>
-                                        <p class="testimonials-pp">This is the only place to stay in Catalina! I have stayed in the cheaper hotels and they were fine, but this is just the icing on the cake! After spending the day bike riding and hiking to come back and enjoy a glass of wine while looking out your ocean view window and then to top it all off...</p>
-                                    </div>
+                                    <p class="testimonials-pp">Већ годинама сам редован гост. Апартмани су лепо уређени!
+                                        Природа је прелепа, одлично место за одмор, опуштање и уживање, далеко од
+                                        градске вреве, а ипак само сат и по од Београда. Апартмани Петра су један од
+                                        ретких апартмана у Србији који омогућавају боравак кућних љубимаца, због чега су
+                                        право место за све љубитеље животиња и природе који желе да свој одмор проведу
+                                        заједно са својим четвороножним пријатељима. Све препоруке!</p>
                                 </div>
                             </div>
                         </div>
@@ -534,89 +664,100 @@
         </div>
     </section>
     <!-- END / TESTIMONOALS -->
-    
+
     <!-- FAQ -->
     <section class="section-about">
         <div class="container">
-          <div class="row">
-            <div class="wrap-about">
-              <!-- FAQ ITEM -->
-              <div class="about-item about-right">
-                <div class="faq-container">
-                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 no-padding-left">
-                    <!-- IMAGE -->
-                    <div class="img">
-                      <img src="img/Zelena/Zelena-kuca-md.jpg" alt="FAQ Image" class="img-responsive" />
+            <div class="row">
+                <div class="wrap-about">
+                    <!-- FAQ ITEM -->
+                    <div class="about-item about-right">
+                        <div class="faq-container">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 no-padding-left">
+                                <!-- IMAGE -->
+                                <picture class="box img">
+                                    <source media="(max-width: 767px)" srcset="img/Zelena/Zelena-kuca-md-min.jpg"
+                                        sizes="300x225">
+                                    <source media="(min-width: 768px)" srcset="img/Zelena/Zelena-kuca-md-min.jpg"
+                                        sizes="900x675">
+                                    <img loading="lazy" src="img/Zelena/Zelena-kuca-md-min.jpg" class="img-responsive"
+                                        alt="igraliste za decu" title="igraliste za decu">
+                                </picture>
+                                <!-- END / IMAGE -->
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 no-padding-right faq-section">
+                                <div class="text">
+                                    <h2 class="heading">Često Postavljana Pitanja </h2>
+                                    <div class="desc">
+                                        <!-- QUESTION 1 -->
+                                        <div class="faq-item">
+                                            <h4>
+                                                <a href="#question1" data-toggle="collapse">
+                                                    Da li su kućni ljubimci dozvoljeni u apartmanima?
+                                                    <span class="expand-icon">+</span>
+                                                </a>
+                                            </h4>
+                                            <div id="question1" class="collapse">
+                                                <p>Kućni ljubimci su dozvoljeni ako nas obavestite unapred.</p>
+                                            </div>
+                                        </div>
+                                        <!-- END / QUESTION -->
+                                        <!-- QUESTION 2 -->
+                                        <div class="faq-item">
+                                            <h4>
+                                                <a href="#question2" data-toggle="collapse">
+                                                    Kako su apartmani opremljeni?
+                                                    <span class="expand-icon">+</span>
+                                                </a>
+                                            </h4>
+                                            <div id="question2" class="collapse">
+                                                <p>Apartmani su potpuno opremljeni kuhinjskim potrepštinama, Wi-Fi,
+                                                    grejanjem za zimu i još mnogo toga. Specifične karakteristike mogu
+                                                    se razlikovati od apartmana do apartmana, pa se obratite prilikom
+                                                    rezervacije.</p>
+                                            </div>
+                                        </div>
+                                        <!-- END / QUESTION -->
+                                        <!-- QUESTION 3 -->
+                                        <div class="faq-item">
+                                            <h4>
+                                                <a href="#question3" data-toggle="collapse">
+                                                    Kada su vreme prijave i odjave?
+                                                    <span class="expand-icon">+</span>
+                                                </a>
+                                            </h4>
+                                            <div id="question3" class="collapse">
+                                                <p>Prijava je od 15:00, a odjava do 11:00. Rani dolazak i kasni odlazak
+                                                    mogu se zatražiti, ali su podložni dostupnosti.</p>
+                                            </div>
+                                        </div>
+                                        <!-- END / QUESTION -->
+                                        <!-- QUESTION 4 -->
+                                        <div class="faq-item">
+                                            <h4>
+                                                <a href="#question4" data-toggle="collapse">
+                                                    Gde se nalaze apartmani?
+                                                    <span class="expand-icon">+</span>
+                                                </a>
+                                            </h4>
+                                            <div id="question4" class="collapse">
+                                                <p>Apartmani se nalaze na prelepim planinskim lokacijama, u blizini
+                                                    staza za šetanje i skijanje. Detaljnije informacije o lokaciji
+                                                    možete dobiti prilikom rezervacije.</p>
+                                            </div>
+                                        </div>
+                                        <!-- END / QUESTION -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <!-- END / IMAGE -->
-                  </div>
-                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 no-padding-right faq-section">
-                    <div class="text">
-                      <h2 class="heading">Često Postavljana Pitanja </h2>
-                      <div class="desc">
-                        <!-- QUESTION 1 -->
-                        <div class="faq-item">
-                          <h4>
-                            <a href="#question1" data-toggle="collapse">
-                              Da li su kućni ljubimci dozvoljeni u apartmanima?
-                              <span class="expand-icon">+</span>
-                            </a>
-                          </h4>
-                          <div id="question1" class="collapse">
-                            <p>Kućni ljubimci su dozvoljeni ako nas obavestite unapred.</p>
-                          </div>
-                        </div>
-                        <!-- END / QUESTION -->
-                        <!-- QUESTION 2 -->
-                        <div class="faq-item">
-                          <h4>
-                            <a href="#question2" data-toggle="collapse">
-                              Kako su apartmani opremljeni?
-                              <span class="expand-icon">+</span>
-                            </a>
-                          </h4>
-                          <div id="question2" class="collapse">
-                            <p>Apartmani su potpuno opremljeni kuhinjskim potrepštinama, Wi-Fi, grejanjem za zimu i još mnogo toga. Specifične karakteristike mogu se razlikovati od apartmana do apartmana, pa se obratite prilikom rezervacije.</p>
-                          </div>
-                        </div>
-                        <!-- END / QUESTION -->
-                        <!-- QUESTION 3 -->
-                        <div class="faq-item">
-                          <h4>
-                            <a href="#question3" data-toggle="collapse">
-                              Kada su vreme prijave i odjave?
-                              <span class="expand-icon">+</span>
-                            </a>
-                          </h4>
-                          <div id="question3" class="collapse">
-                            <p>Prijava je od 15:00, a odjava do 11:00. Rani dolazak i kasni odlazak mogu se zatražiti, ali su podložni dostupnosti.</p>
-                          </div>
-                        </div>
-                        <!-- END / QUESTION -->
-                        <!-- QUESTION 4 -->
-                        <div class="faq-item">
-                          <h4>
-                            <a href="#question4" data-toggle="collapse">
-                              Gde se nalaze apartmani?
-                              <span class="expand-icon">+</span>
-                            </a>
-                          </h4>
-                          <div id="question4" class="collapse">
-                            <p>Apartmani se nalaze na prelepim planinskim lokacijama, u blizini staza za šetanje i skijanje. Detaljnije informacije o lokaciji možete dobiti prilikom rezervacije.</p>
-                          </div>
-                        </div>
-                        <!-- END / QUESTION -->
-                      </div>
-                    </div>
-                  </div>
+                    <!-- END / FAQ ITEM -->
                 </div>
-              </div>
-              <!-- END / FAQ ITEM -->
             </div>
-          </div>
         </div>
-      </section>
-      <!-- END / FAQ -->
+    </section>
+    <!-- END / FAQ -->
 
     <!-- OUR-GALLERY-->
     <section class="gallery-our">
@@ -624,13 +765,12 @@
             <div class="gallery">
                 <h2 class="title-gallery">Naša Galerija </h2>
                 <div class="outline"></div>
-                <ul class="nav nav-tabs text-uppercase">
-                    <li class="active"><a data-toggle="tab" href="#Hotel">Dvorište</a></li>
-                    <li><a data-toggle="tab" href="#menu1">Zelena Kuća </a></li>
-                    <li><a data-toggle="tab" href="#menu2">Žuta kuća</a></li>
-                    <!-- <li><a data-toggle="tab" href="#menu3">Dvorište</a></li> -->
+                <ul class="nav nav-tabs text-uppercase row">
+                    <li class="active col-xs-12 col-sm-4"><a data-toggle="tab" href="#Hotel">Dvorište</a></li>
+                    <li class="col-xs-12 col-sm-4"><a data-toggle="tab" href="#menu1">Zelena Kuća </a></li>
+                    <li class="col-xs-12 col-sm-4"><a data-toggle="tab" href="#menu2">Žuta kuća</a></li>
                 </ul>
-                <br/>
+                <br />
                 <div class="tab-content">
                     <!-- dvoriste -->
                     <div id="Hotel" class="tab-pane fade in active">
@@ -638,25 +778,47 @@
                             <div class="row">
                                 <div class="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
                                     <div class="wrap-box">
-                                        <div class="box-img">
-                                            <img src="img/dvoriste/igraliste-za-decu-md.jpg" class="img-responsive" alt="igraliste za decu" title="igraliste za decu">
-                                        </div>
+                                        <picture class="box img">
+                                            <source media="(max-width: 767px)"
+                                                srcset="img/dvoriste/igraliste-za-decu-sm-min.jpg" sizes="300x225">
+                                            <source media="(min-width: 768px)"
+                                                srcset="img/dvoriste/igraliste-za-decu-md-min.jpg" sizes="900x675">
+                                            <img loading="lazy" src="img/dvoriste/igraliste-za-decu-md-min.jpg"
+                                                class="img-responsive" alt="igraliste za decu"
+                                                title="igraliste za decu">
+                                        </picture>
                                         <div class="gallery-box-main " title>
                                             <div class="gallery-icon">
-                                                <a class="lightbox " href="img/dvoriste/igraliste-za-decu-md.jpg" data-littlelightbox-group="gallery" title="igraliste za decu"><i class="ion-ios-plus-empty" aria-hidden="true" ></i> </a>
+                                                <a class="lightbox " href="img/dvoriste/igraliste-za-decu-md-min.jpg"
+                                                    data-littlelightbox-group="gallery" title="igraliste za decu"><i
+                                                        class="ion-ios-plus-empty" aria-hidden="true"></i> </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                
+
+
+
+
+
                                 <div class="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
                                     <div class="wrap-box">
-                                        <div class="box-img">
-                                            <img src="img/dvoriste/klupa-i-fontana-md.jpg" class="img-responsive" alt="klupa i fontana u dvorištu" title="klupa i fontana u dvorištu">
-                                        </div>
+                                        <picture class="box img">
+                                            <source media="(max-width: 767px)"
+                                                srcset="img/dvoriste/klupa-i-fontana-sm-min.jpg" sizes="300x225">
+                                            <source media="(min-width: 768px)"
+                                                srcset="img/dvoriste/klupa-i-fontana-md-min.jpg" sizes="900x675">
+                                            <img loading="lazy" src="img/dvoriste/klupa-i-fontana-md-min.jpg"
+                                                class="img-responsive" alt="igraliste za decu"
+                                                title="igraliste za decu">
+                                        </picture>
+
                                         <div class="gallery-box-main">
                                             <div class="gallery-icon">
-                                                <a class="lightbox " href="img/dvoriste/klupa-i-fontana-md.jpg" data-littlelightbox-group="gallery" title="klupa i fontana u dvorištu"><i class="ion-ios-plus-empty" aria-hidden="true" ></i> </a>
+                                                <a class="lightbox " href="img/dvoriste/klupa-i-fontana-md-min.jpg"
+                                                    data-littlelightbox-group="gallery"
+                                                    title="klupa i fontana u dvorištu"><i class="ion-ios-plus-empty"
+                                                        aria-hidden="true"></i> </a>
                                             </div>
                                         </div>
                                     </div>
@@ -664,12 +826,22 @@
 
                                 <div class="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
                                     <div class="wrap-box">
-                                        <div class="box-img">
-                                            <img src="img/dvoriste/obe-kuce-md.jpg" class="img-responsive" alt="zelena i žuta kuća sa dvorištem" title="zelena i žuta kuća sa dvorištem">
-                                        </div>
+                                        <picture class="box img">
+                                            <source media="(max-width: 767px)" srcset="img/dvoriste/obe-kuce-sm-min.jpg"
+                                                sizes="300x225">
+                                            <source media="(min-width: 768px)" srcset="img/dvoriste/obe-kuce-md-min.jpg"
+                                                sizes="900x675">
+                                            <img loading="lazy" src="img/dvoriste/obe-kuce-md-min.jpg"
+                                                class="img-responsive" alt="igraliste za decu"
+                                                title="igraliste za decu">
+                                        </picture>
+
                                         <div class="gallery-box-main">
                                             <div class="gallery-icon">
-                                                <a class="lightbox " href="img/dvoriste/obe-kuce-md.jpg" data-littlelightbox-group="gallery" title="zelena i žuta kuća sa dvorištem"><i class="ion-ios-plus-empty" aria-hidden="true" ></i> </a>
+                                                <a class="lightbox " href="img/dvoriste/obe-kuce-md-min.jpg"
+                                                    data-littlelightbox-group="gallery"
+                                                    title="zelena i žuta kuća sa dvorištem"><i
+                                                        class="ion-ios-plus-empty" aria-hidden="true"></i> </a>
                                             </div>
                                         </div>
                                     </div>
@@ -677,12 +849,22 @@
 
                                 <div class="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
                                     <div class="wrap-box">
-                                        <div class="box-img">
-                                            <img src="img/dvoriste/letnjikovac-md.jpg" class="img-responsive" alt="veliki letnjikovac za roštilj" title="veliki letnjikovac za roštilj">
-                                        </div>
+                                        <picture class="box img">
+                                            <source media="(max-width: 767px)" srcset="img/dvoriste/letnjikovac-sm-min.jpg"
+                                                sizes="300x225">
+                                            <source media="(min-width: 768px)" srcset="img/dvoriste/letnjikovac-md-min.jpg"
+                                                sizes="900x675">
+                                            <img loading="lazy" src="img/dvoriste/letnjikovac-md-min.jpg"
+                                                class="img-responsive" alt="igraliste za decu"
+                                                title="igraliste za decu">
+                                        </picture>
+
                                         <div class="gallery-box-main">
                                             <div class="gallery-icon">
-                                                <a class="lightbox " href="img/dvoriste/letnjikovac-md.jpg" data-littlelightbox-group="gallery" title="veliki letnjikovac za roštilj"><i class="ion-ios-plus-empty" aria-hidden="true" ></i> </a>
+                                                <a class="lightbox " href="img/dvoriste/letnjikovac-md-min.jpg"
+                                                    data-littlelightbox-group="gallery"
+                                                    title="veliki letnjikovac za roštilj"><i class="ion-ios-plus-empty"
+                                                        aria-hidden="true"></i> </a>
                                             </div>
                                         </div>
                                     </div>
@@ -698,12 +880,19 @@
 
                                 <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 ">
                                     <div class="wrap-box">
-                                        <div class="box-img">
-                                            <img src="img/Zelena/zelena-kuca-1-md.jpg" class="img-responsive" alt="ulaz u zelenu kuću" title="ulaz u zelenu kuću">
-                                        </div>
+                                        <picture class="box img">
+                                            <source media="(max-width: 767px)" srcset="img/Zelena/zelena-kuca-1-sm-min.jpg"
+                                                sizes="300x225">
+                                            <source media="(min-width: 768px)" srcset="img/Zelena/zelena-kuca-1-md-min.jpg"
+                                                sizes="900x675">
+                                            <img loading="lazy" src="img/Zelena/zelena-kuca-1-md-min.jpg" class="img-responsive"
+                                                alt="igraliste za decu" title="igraliste za decu">
+                                        </picture>
                                         <div class="gallery-box-main">
                                             <div class="gallery-icon">
-                                                <a class="lightbox " href="img/Zelena/zelena-kuca-3-md.jpg" data-littlelightbox-group="gallery" title="ulaz u zelenu kuću"><i class="ion-ios-plus-empty" aria-hidden="true" ></i> </a>
+                                                <a class="lightbox " href="img/Zelena/zelena-kuca-3-md-min.jpg"
+                                                    data-littlelightbox-group="gallery" title="ulaz u zelenu kuću"><i
+                                                        class="ion-ios-plus-empty" aria-hidden="true"></i> </a>
                                             </div>
                                         </div>
                                     </div>
@@ -711,12 +900,21 @@
 
                                 <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 ">
                                     <div class="wrap-box">
-                                        <div class="box-img">
-                                            <img src="img/Zelena/apartman/dnevna-md.jpg" class="img-responsive" alt="apartman u zelenoj kući" title="apartman u zelenoj kući">
-                                        </div>
+                                        <picture class="box img">
+                                            <source media="(max-width: 767px)"
+                                                srcset="img/Zelena/apartman/dnevna-small-min.jpg" sizes="300x225">
+                                            <source media="(min-width: 768px)"
+                                                srcset="img/Zelena/apartman/dnevna-md-min.jpg" sizes="900x675">
+                                            <img loading="lazy" src="img/Zelena/apartman/dnevna-md-min.jpg"
+                                                class="img-responsive" alt="igraliste za decu"
+                                                title="igraliste za decu">
+                                        </picture>
                                         <div class="gallery-box-main">
                                             <div class="gallery-icon">
-                                                <a class="lightbox " href="img/Zelena/apartman/dnevna-md.jpg" data-littlelightbox-group="gallery" title="apartman u zelenoj kući"><i class="ion-ios-plus-empty" aria-hidden="true" ></i> </a>
+                                                <a class="lightbox " href="img/Zelena/apartman/dnevna-md-min.jpg"
+                                                    data-littlelightbox-group="gallery"
+                                                    title="apartman u zelenoj kući"><i class="ion-ios-plus-empty"
+                                                        aria-hidden="true"></i> </a>
                                             </div>
                                         </div>
                                     </div>
@@ -724,12 +922,21 @@
 
                                 <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 ">
                                     <div class="wrap-box">
-                                        <div class="box-img">
-                                            <img src="img/Zelena/Studio/dnevna-md.jpg" class="img-responsive" alt="dnevna soba u studio apartmanu" title="dnevna soba u studio apartmanu">
-                                        </div>
+                                        <picture class="box img">
+                                            <source media="(max-width: 767px)" srcset="img/Zelena/Studio/dnevna-md-min.jpg"
+                                                sizes="300x225">
+                                            <source media="(min-width: 768px)" srcset="img/Zelena/Studio/dnevna-md-min.jpg"
+                                                sizes="900x675">
+                                            <img loading="lazy" src="img/Zelena/Studio/dnevna-md-min.jpg"
+                                                class="img-responsive" alt="igraliste za decu"
+                                                title="igraliste za decu">
+                                        </picture>
                                         <div class="gallery-box-main">
                                             <div class="gallery-icon">
-                                                <a class="lightbox " href="img/Zelena/Studio/dnevna-md.jpg" data-littlelightbox-group="gallery" title="dnevna soba u studio apartmanu"><i class="ion-ios-plus-empty" aria-hidden="true" ></i> </a>
+                                                <a class="lightbox " href="img/Zelena/Studio/dnevna-md-min.jpg"
+                                                    data-littlelightbox-group="gallery"
+                                                    title="dnevna soba u studio apartmanu"><i class="ion-ios-plus-empty"
+                                                        aria-hidden="true"></i> </a>
                                             </div>
                                         </div>
                                     </div>
@@ -737,12 +944,20 @@
 
                                 <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 ">
                                     <div class="wrap-box">
-                                        <div class="box-img">
-                                            <img src="img/Zelena/zelena-kuca-3-md.jpg" class="img-responsive" alt="Product" title="zelena kuca i fontana">
-                                        </div>
+                                        <picture class="box img">
+                                            <source media="(max-width: 767px)" srcset="img/Zelena/zelena-kuca-3-sm-min.jpg"
+                                                sizes="300x225">
+                                            <source media="(min-width: 768px)" srcset="img/Zelena/zelena-kuca-3-md-min.jpg"
+                                                sizes="900x675">
+                                            <img loading="lazy" src="img/Zelena/zelena-kuca-3-md-min.jpg"
+                                                class="img-responsive" alt="igraliste za decu"
+                                                title="igraliste za decu">
+                                        </picture>
                                         <div class="gallery-box-main">
                                             <div class="gallery-icon">
-                                                <a class="lightbox " href="img/Zelena/zelena-kuca-3-md.jpg" data-littlelightbox-group="gallery" title="zelena kuca i fontana"><i class="ion-ios-plus-empty" aria-hidden="true" ></i> </a>
+                                                <a class="lightbox " href="img/Zelena/zelena-kuca-3-md-min.jpg"
+                                                    data-littlelightbox-group="gallery" title="zelena kuca i fontana"><i
+                                                        class="ion-ios-plus-empty" aria-hidden="true"></i> </a>
                                             </div>
                                         </div>
                                     </div>
@@ -750,17 +965,26 @@
 
                                 <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 ">
                                     <div class="wrap-box">
-                                        <div class="box-img">
-                                            <img src="img/Zelena/apartman/spavaca-md.jpg" class="img-responsive" alt="Product" title="spavaca soba u zelenoj kuci">
-                                        </div>
+                                        <picture class="box img">
+                                            <source media="(max-width: 767px)"
+                                                srcset="img/Zelena/apartman/spavaca-sm-min.jpg" sizes="300x225">
+                                            <source media="(min-width: 768px)"
+                                                srcset="img/Zelena/apartman/spavaca-md-min.jpg" sizes="900x675">
+                                            <img loading="lazy" src="img/Zelena/apartman/spavaca-md-min.jpg"
+                                                class="img-responsive" alt="igraliste za decu"
+                                                title="igraliste za decu">
+                                        </picture>
                                         <div class="gallery-box-main">
                                             <div class="gallery-icon">
-                                                <a class="lightbox " href="img/Zelena/apartman/spavaca-md.jpg" data-littlelightbox-group="gallery" title="spavaca soba u zelenoj kuci"><i class="ion-ios-plus-empty" aria-hidden="true" ></i> </a>
+                                                <a class="lightbox " href="img/Zelena/apartman/spavaca-md-min.jpg"
+                                                    data-littlelightbox-group="gallery"
+                                                    title="spavaca soba u zelenoj kuci"><i class="ion-ios-plus-empty"
+                                                        aria-hidden="true"></i> </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -771,37 +995,62 @@
                             <div class="row">
                                 <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 ">
                                     <div class="wrap-box">
-                                        <div class="box-img">
-                                            <img src="img/Zuta/zuta-kuca-2-md.jpg" class="img-responsive" alt="zuta kuca " title="zuta kuca ">
-                                        </div>
+                                        <picture class="box img">
+                                            <source media="(max-width: 767px)" srcset="img/Zuta/zuta-kuca-2-md-min.jpg"
+                                                sizes="300x225">
+                                            <source media="(min-width: 768px)" srcset="img/Zuta/zuta-kuca-2-md-min.jpg"
+                                                sizes="900x675">
+                                            <img loading="lazy" src="img/Zuta/zuta-kuca-2-md-min.jpg" class="img-responsive"
+                                                alt="igraliste za decu" title="igraliste za decu">
+                                        </picture>
                                         <div class="gallery-box-main">
                                             <div class="gallery-icon">
-                                                <a class="lightbox " href="img/Zuta/zuta-kuca-2-md.jpg" data-littlelightbox-group="gallery" title="zuta kuca "><i class="ion-ios-plus-empty" aria-hidden="true" ></i> </a>
+                                                <a class="lightbox " href="img/Zuta/zuta-kuca-2-md-min.jpg"
+                                                    data-littlelightbox-group="gallery" title="zuta kuca "><i
+                                                        class="ion-ios-plus-empty" aria-hidden="true"></i> </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 ">
                                     <div class="wrap-box">
-                                        <div class="box-img">
-                                            <img src="img/Zuta/apartman/dnevna-2-md.jpg" class="img-responsive" alt="dnevna soba u apartmanu petra 2" title="dnevna soba u apartmanu petra 2">
-                                        </div>
+                                        <picture class="box img">
+                                            <source media="(max-width: 767px)"
+                                                srcset="img/Zuta/apartman/dnevna-2-sm-min.jpg" sizes="300x225">
+                                            <source media="(min-width: 768px)"
+                                                srcset="img/Zuta/apartman/dnevna-2-md-min.jpg" sizes="900x675">
+                                            <img loading="lazy" src="img/Zuta/apartman/dnevna-2-md-min.jpg"
+                                                class="img-responsive" alt="igraliste za decu"
+                                                title="igraliste za decu">
+                                        </picture>
                                         <div class="gallery-box-main">
                                             <div class="gallery-icon">
-                                                <a class="lightbox " href="img/Zuta/apartman/dnevna-2-md.jpg" data-littlelightbox-group="gallery" title="dnevna soba u apartmanu petra 2"><i class="ion-ios-plus-empty" aria-hidden="true" ></i> </a>
+                                                <a class="lightbox " href="img/Zuta/apartman/dnevna-2-md-min.jpg"
+                                                    data-littlelightbox-group="gallery"
+                                                    title="dnevna soba u apartmanu petra 2"><i
+                                                        class="ion-ios-plus-empty" aria-hidden="true"></i> </a>
                                             </div>
                                         </div>
                                     </div>
-                              
+
                                 </div>
                                 <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 ">
                                     <div class="wrap-box">
-                                        <div class="box-img">
-                                            <img src="img/Zuta/Studio/kupatilo-md.jpg" class="img-responsive" alt="kupatilo u studiju žuta kuća" title="kupatilo u studiju žuta kuća">
-                                        </div>
+                                        <picture class="box img">
+                                            <source media="(max-width: 767px)" srcset="img/Zuta/Studio/kupatilo-md-min.jpg"
+                                                sizes="300x225">
+                                            <source media="(min-width: 768px)" srcset="img/Zuta/Studio/kupatilo-md-min.jpg"
+                                                sizes="900x675">
+                                            <img loading="lazy" src="img/Zuta/Studio/kupatilo-md-min.jpg"
+                                                class="img-responsive" alt="igraliste za decu"
+                                                title="igraliste za decu">
+                                        </picture>
                                         <div class="gallery-box-main">
                                             <div class="gallery-icon">
-                                                <a class="lightbox " href="img/Zuta/Studio/kupatilo-md.jpg" data-littlelightbox-group="gallery" title="kupatilo u studiju žuta kuća"><i class="ion-ios-plus-empty" aria-hidden="true" ></i> </a>
+                                                <a class="lightbox " href="img/Zuta/Studio/kupatilo-md-min.jpg"
+                                                    data-littlelightbox-group="gallery"
+                                                    title="kupatilo u studiju žuta kuća"><i class="ion-ios-plus-empty"
+                                                        aria-hidden="true"></i> </a>
                                             </div>
                                         </div>
                                     </div>
@@ -810,89 +1059,12 @@
                             </div>
                         </div>
                     </div>
-                    <!-- dvoriste -->
-                    <!-- <div id="menu3" class="tab-pane fade">
-                        <div class="product ">
-                            <div class="row">
-                                <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 ">
-                                    <div class="wrap-box">
-                                        <div class="box-img">
-                                            <img src="images/Home-1/gallery-3.jpg" class="img-responsive" alt="Product" title="images products">
-                                        </div>
-                                        <div class="gallery-box-main">
-                                            <div class="gallery-icon">
-                                                <a class="lightbox " href="images/Home-1/gallery-2-2.jpg" data-littlelightbox-group="gallery" title="Flying is life"><i class="ion-ios-plus-empty" aria-hidden="true" ></i> </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 ">
-                                    <div class="wrap-box">
-                                        <div class="box-img">
-                                            <img src="images/Home-1/gallery-4.jpg" class="img-responsive" alt="Product" title="images products">
-                                        </div>
-                                        <div class="gallery-box-main">
-                                            <div class="gallery-icon">
-                                                <a class="lightbox " href="images/Home-1/gallery-2-2.jpg" data-littlelightbox-group="gallery" title="Flying is life"><i class="ion-ios-plus-empty" aria-hidden="true" ></i> </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 ">
-                                    <div class="wrap-box">
-                                        <div class="box-img">
-                                            <img src="images/Home-1/gallery-5.jpg" class="img-responsive" alt="Product" title="images products">
-                                        </div>
-                                        <div class="gallery-box-main">
-                                            <div class="gallery-icon">
-                                                <a class="lightbox " href="images/Home-1/gallery-2-2.jpg" data-littlelightbox-group="gallery" title="Flying is life"><i class="ion-ios-plus-empty" aria-hidden="true" ></i> </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 ">
-                                    <div class="wrap-box">
-                                        <div class="box-img">
-                                            <img src="images/Home-1/gallery-6.jpg" class="img-responsive" alt="Product" title="images products">
-                                        </div>
-                                        <div class="gallery-box-main">
-                                            <div class="gallery-icon">
-                                                <a class="lightbox " href="images/Home-1/gallery-2-2.jpg" data-littlelightbox-group="gallery" title="Flying is life"><i class="ion-ios-plus-empty" aria-hidden="true" ></i> </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 ">
-                                    <div class="wrap-box">
-                                        <div class="box-img">
-                                            <img src="images/Home-1/gallery-7.jpg" class="img-responsive" alt="Product" title="images products">
-                                        </div>
-                                        <div class="gallery-box-main">
-                                            <div class="gallery-icon">
-                                                <a class="lightbox " href="images/Home-1/gallery-2-2.jpg" data-littlelightbox-group="gallery" title="Flying is life"><i class="ion-ios-plus-empty" aria-hidden="true" ></i> </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 ">
-                                    <div class="wrap-box">
-                                        <div class="box-img">
-                                            <img src="images/Home-1/gallery-8.jpg" class="img-responsive" alt="Product" title="images products">
-                                        </div>
-                                        <div class="gallery-box-main">
-                                            <div class="gallery-icon">
-                                                <a class="lightbox " href="images/Home-1/gallery-2-2.jpg" data-littlelightbox-group="gallery" title="Flying is life"><i class="ion-ios-plus-empty" aria-hidden="true" ></i> </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
+                    
                 </div>
                 <!-- end-tab-content -->
                 <div class="text-center">
-                    <a href="/gallery.html"><button type="button" class="btn btn-default btn-our">Pogledaj sve</button></a>
+                    <a href="/gallery.html"><button type="button" class="btn btn-default btn-our">Pogledaj
+                            sve</button></a>
                 </div>
             </div>
             <!-- /gallery -->
@@ -901,20 +1073,31 @@
     </section>
     <!-- END / OUR GALLERY -->
 
-<!--FOOTER-->
-<footer class="footer-sky">
-    
-    <div class="footer-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1">
-                    <div class="icon-email">
-                        <a href="#" title="Email"><img src="img/icons/phone-icon.png" alt="Email" class="img-responsive"></a>
+    <!--FOOTER-->
+    <footer class="footer-sky">
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                        <div class="icon-email hidden-xs">
+                            <a href="#" title="phone">
+                                <picture class="img-responsive">
+                                    <source media="(max-width: 767px)" srcset="img/icons/phone-icon-sm-min.png"
+                                        sizes="32x32">
+                                    <source media="(min-width: 768px)" srcset="img/icons/phone-icon-min.png"
+                                        sizes="64x64">
+                                    <img loading="lazy" src="img/icons/phone-icon-min.png" class="img-responsive"
+                                        alt="igraliste za decu" title="igraliste za decu">
+                                </picture>
+                            </a>
+                        </div>
+
                     </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-5">
-                    <h5 class="sky-h5">Za rezervacije, pozovite: <span> <a href="tel:0654242135">0654242135   </a></span></h5>
-                    <!-- <div class="textbox">
+                    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-5">
+                        <h5 class="sky-h5">Za rezervacije, pozovite: <span> <a href="tel:0654242135">0654242135
+                                </a></span></h5>
+                        <!-- <div class="textbox">
                         <div class="form-inline">
                             <div class="form-group">
                                 <div class="input-group">
@@ -924,35 +1107,36 @@
                             </div>
                         </div>
                     </div> -->
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6 text-right">
-                    <div class="footer-icon-l">
-                        <a href="#" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        <a href="#" title="Facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                        <a href="#" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6 text-right">
+                        <div class="footer-icon-l">
+                            <a href="#" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#" title="Facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                            <a href="#" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- /container -->
         </div>
-        <!-- /container -->
-    </div>
-    
-    
+
+
         <!-- /footer-top -->
         <div class="footer-mid">
             <div class="container">
                 <div class="row padding-footer-mid">
-                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <div class="hidden-sm hidden-xs col-md-3 col-lg-3">
                         <div class="footer-logo text-center list-content">
-                            <a href="index.html" title="Skyline"><img src="images/Home-2/logo-main.png" alt="Image"></a>
+                            <a href="index.html" title="Petra"><img loading="lazy" src="img/icons/logo-main-min.png"
+                                    alt="Petra logo"></a>
                         </div>
                         <div class="footer-bottom">
                             <div class="no-padding">
-                               <p>Copyright © 2023 by Marko Vasic</p> 
+                                <p>Copyright © 2023 by Marko Vasic</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 col-lg-offset-1 col-md-offset-1  ">
+                    <div class="col-xs-3 col-sm-4 col-md-2 col-lg-2 col-lg-offset-1  ">
                         <div class="list-content">
                             <nav class="">
                                 <ul class="">
@@ -962,10 +1146,10 @@
                                     <li class="">
                                         <a href="apartments.html" title="Room & Rate">Apartmani</a>
                                     </li>
-                           
+
                                     <li class="">
-                                        <a href="gallery.html" title="Gallery" >Gallery</a>
-        
+                                        <a href="gallery.html" title="Gallery">Gallery</a>
+
                                     </li>
                                     <li><a href="about.html" title="About">About</a></li>
                                     <li><a href="contact.html" title="Contact">Contact</a></li>
@@ -973,44 +1157,58 @@
                             </nav>
                         </div>
                     </div>
-                    <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 col-lg-offset-1 col-md-offset-1 ">
+                    <div
+                        class="col-xs-3 col-sm-3 col-md-2 col-lg-2 col-lg-offset-1 col-md-offset-1 col-xs-offset-2 col-sm-offset-0">
                         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6 text-right">
                             <div class="footer-icon-l ">
                                 <div class="list-content">
-                                <ul >
-                                    <li>
-                                        <a href="#" title="Twitter">
-                                            <i class="fa fa-twitter" aria-hidden="true"></i> Twitter
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" title="Facebook">
-                                            <i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" title="Instagram">
-                                            <i class="fa fa-instagram" aria-hidden="true"></i> Instagram
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                                    <ul>
+                                        <li>
+                                            <a href="#" title="Twitter">
+                                                <i class="fa fa-twitter" aria-hidden="true"></i> Twitter
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="Facebook">
+                                                <i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="Instagram">
+                                                <i class="fa fa-instagram" aria-hidden="true"></i> Instagram
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 col-lg-offset-1 col-md-offset-1">
-                        <div class="list-content ">
-                           <h5 class="h4">prijatelji sajta</h5>
-                        <div class="footer-logo text-center list-content">
-                            <a href="https://www.autovladashop.co.rs/" title="Skyline" target="_blank"><img src="images/Home-2/footer-avs-logo.png" alt="Image"></a>
-                        </div>
+
+                    <div class="col-xs-6 col-sm-2 col-md-3 col-lg-2 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+                        <div class="list-content center ">
+                            <h5 class="h4">prijatelji sajta</h5>
+                            <div class="footer-logo text-center list-content ">
+                                <a href="https://www.autovladashop.co.rs/" title="Auto vlada shop" target="_blank"><img
+                                        loading="lazy" src="img/icons/footer-avs-logo-min.png"
+                                        alt="Auto valda shop logo"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            
+                <div class=" hidden-md hidden-lg">
+                    <div class="footer-logo text-center list-content hidden-xs">
+                        <a href="index.html" title="Petra"><img loading="lazy" src="img/icons/logo-main-min.png"
+                                alt="Petra logo"></a>
+                    </div>
+                    <div class="footer-bottom">
+                        <div class="no-padding center">
+                            <p>Copyright © 2023 by Marko Vasic</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
     </footer>
     <!-- END / FOOTER-->
 
@@ -1018,21 +1216,27 @@
     <a href="#" title="sroll" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
     <!--END / SROLL TOP-->
 
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/ionicons.min.css" defer>
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" defer>
+    <link rel="stylesheet" type="text/css" href="css/gallery.css" defer>
+    <link rel="stylesheet" type="text/css" href="css/vit-gallery.css" defer>
+
     <!-- LOAD JQUERY -->
     <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js" defer></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/vit-gallery.js"></script>
-    <script type="text/javascript" src="js/jquery.countTo.js"></script>
+    <script type="text/javascript" src="js/vit-gallery.js" defer></script>
     <script type="text/javascript" src="js/jquery.appear.min.js"></script>
     <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
     <script type="text/javascript" src="js/bootstrap-select.js"></script>
     <script type="text/javascript" src="js/jquery.littlelightbox.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDyCxHyc8z9gMA5IlipXpt0c33Ajzqix4"></script>
     <!-- Custom jQuery -->
     <script type="text/javascript" src="js/sky.js"></script>
-   
+
 </body>
 
 </html>
