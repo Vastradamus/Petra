@@ -4,3 +4,4 @@ images
 package-lock.json
 gulpfile.js
 sass
+node_modules
