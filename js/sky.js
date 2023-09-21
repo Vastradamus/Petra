@@ -1,4 +1,4 @@
-element.addEventListener('touchstart', function() {}, {passive: true});
+// element.addEventListener('touchstart', function() {}, {passive: true});
 
 
 $(document).ready(function() {
